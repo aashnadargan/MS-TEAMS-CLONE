@@ -3,8 +3,6 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
 import 'package:jitsi_meet/feature_flag/feature_flag.dart';
 import 'package:jitsi_meet/feature_flag/feature_flag_enum.dart';
 import 'package:jitsi_meet/jitsi_meet.dart';
@@ -142,7 +140,7 @@ class _JoinMeetingState extends State<JoinMeeting> {
           height: 64,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: GradientColors.facebookMessenger
+              colors:  [Color.fromRGBO( 245, 64, 51,1), Color.fromRGBO(214, 58, 47, 1)]
             )
           ),
           child: Center(

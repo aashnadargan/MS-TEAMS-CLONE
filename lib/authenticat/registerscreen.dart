@@ -1,8 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
-
 import '../variables.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -26,16 +23,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height / 2,
             decoration: BoxDecoration(
-                gradient: LinearGradient(colors: GradientColors.blue)),
+                gradient: LinearGradient(colors: [Color.fromRGBO(140, 22, 219, 1), Color.fromRGBO(99, 45, 135, 1)])),
             child: Center(
-              child: Image.asset('images/logo.png', height: 100),
+              child: Image.asset('images/logo.png', height: 300),
             ),
           ),
           Align(
               alignment: Alignment.bottomCenter,
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height / 1.6,
+                height: MediaQuery.of(context).size.height / 1.8,
                 margin: EdgeInsets.only(left: 30, right: 30),
                 decoration: BoxDecoration(
                     boxShadow: [
@@ -128,7 +125,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         height: 45,
                         decoration: BoxDecoration(
                             gradient:
-                                LinearGradient(colors: GradientColors.pink),
+                                LinearGradient(colors: [Color.fromRGBO(140, 22, 219, 1), Color.fromRGBO(99, 45, 135, 1)]),
                             borderRadius: BorderRadius.circular(20)),
                         child: Center(
                           child: Text(

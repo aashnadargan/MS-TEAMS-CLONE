@@ -1,11 +1,8 @@
-
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
+
 import 'package:teams_clone/variables.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -71,7 +68,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                        width: MediaQuery.of(context).size.width / 2,
                        height: 40,
                        decoration: BoxDecoration(
-                         gradient: LinearGradient(colors: GradientColors.cherry)
+                         gradient: LinearGradient(colors:  [Color.fromRGBO( 245, 64, 51,1), Color.fromRGBO(214, 58, 47, 1)])
                        ),
                        child: Center(
                          child: Text("Update now!",
@@ -104,7 +101,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
               width: double.infinity,
               height:MediaQuery.of(context).size.height / 2.5,
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: GradientColors.facebookMessenger)
+                gradient: LinearGradient(
+                  colors: [Color.fromRGBO(140, 22, 219, 1), Color.fromRGBO(99, 45, 135, 1)])
 
               ),
             ),
@@ -116,7 +114,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             child: CircleAvatar(
               radius: 64,
-              backgroundImage: NetworkImage('https://static.vecteezy.com/system/resources/thumbnails/000/495/460/small/22_Profile.jpg'),
+              backgroundImage: NetworkImage('https://cdn3.vectorstock.com/i/1000x1000/10/02/thin-purple-user-icon-purple-gradient-linear-sign-vector-23541002.jpg'),
             ) ,
           ),
           Center(
@@ -136,7 +134,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                        width: MediaQuery.of(context).size.width / 2,
                        height: 40,
                        decoration: BoxDecoration(
-                         gradient: LinearGradient(colors: GradientColors.cherry)
+                         gradient: LinearGradient(colors: [Color.fromRGBO( 245, 82, 37,1), Color.fromRGBO(214, 58, 47, 1)])
                        ),
                        child: Center(
                          child: Text("Edit Profile",style: mystyle(17,Colors.white) ),

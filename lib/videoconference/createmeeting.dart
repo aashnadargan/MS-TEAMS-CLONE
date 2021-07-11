@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
-import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
 import 'package:teams_clone/variables.dart';
 import 'package:uuid/uuid.dart';
 class CreateMeeting extends StatefulWidget {
@@ -55,7 +53,7 @@ class _CreateMeetingState extends State<CreateMeeting> {
           height: 50,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: GradientColors.facebookMessenger
+              colors:  [Color.fromRGBO( 245, 64, 51,1), Color.fromRGBO(214, 58, 47, 1)]
             )
           ),
           child: Center(

@@ -20,7 +20,7 @@ with SingleTickerProviderStateMixin {
   buildtab( String name){
     return Container(
       width: 150,
-      height: 50,
+      height: 60,
       child: Card(
         child: Center(
           child: Text( name, style: mystyle(15,Colors.black, FontWeight.w700),) ,
@@ -36,13 +36,14 @@ with SingleTickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.purple[400],
         title: Text(
           "Teams",
            style: mystyle(20,Colors.white, FontWeight.w700),
         ),
         bottom : TabBar(
           controller: tabController,
+          
           tabs: [
             buildtab("Join Meeting"),
             buildtab("Create Meeting")
